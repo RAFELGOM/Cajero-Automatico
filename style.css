@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+form{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.error{
+    color: red;
+
+}
+.hide{
+
+    display: none;
+
+}
+

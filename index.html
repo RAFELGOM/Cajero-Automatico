@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cajero Automatico</title>
 </head>
 <body>
     
@@ -16,23 +16,51 @@
         <input type="password" id="password" placeholder="Ingresa tu contraseña">
         <span class="hide" id="errorPassword">Contraseña incorrecta</span>
 
-        <button type="submit">Ingresar</button>
+        <button class="botonMenu" type="submit">Ingresar</button>
 
     </form>
 
     <nav id="menu" class="hide">
 
-    <button id="consultarSaldo">Consultar saldo</button>
-    <button id="retirarDinero">Retirar dinero</button>
-    <button id="ingresarDinero">Ingresar dinero</button>
+    <button class="botonMenu" id="consultarSaldo">Consultar saldo</button>
+    <button class="botonMenu" id="retirarDinero">Retirar dinero</button>
+    <button class="botonMenu" id="ingresarDinero">Ingresar dinero</button>
 
     </nav>
 
-    <div id="cs" class="hide">
+    <section id="Saldo" class="hide">
 
+        <button class="Regresar">Volver</button>
+        <p id="miSaldo"></p>
         
 
+    </section>
+
+    <div id="Retirar" class="hide">
+        <div class="DIV2">
+
+            <input id="montoRetirar" class="botonMenu" type="number" placeholder="Ingresa el monto a retirar">
+            <button id="retirarBoton" class="botonMenu" type="button">Retirar</button>
+            <span class="hide" id="errorResta">Operacion invalida, tienes que contar con al menos $10 en tu cuenta</span><span class="hide" id="errorResta">Operacion invalida, tienes que contar con al menos $10 en tu cuenta</span>
+            <span class="hide" id="errorDatos">Datos invalidos</span>
+
+        </div>
+        
     </div>
+
+    <div id="Ingresar" class="hide">
+
+        <div class="DIV2">
+
+            <input id="montoSumar" class="botonMenu" type="number" placeholder="Monto a ingresar">
+            <button id="ingresarBoton" class="botonMenu" type="button">Ingresar</button>
+            <span class="hide" id="errorSuma">Mucho dinero, ¿programador?, lo lametamos pero no se puede tener mas de $990 en la cuenta.</span>
+            <span class="hide" id="errorDatos">Datos invalidos</span>
+
+        </div>
+
+    </div>
+
 
     <script src="./index.js"></script>
 
